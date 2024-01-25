@@ -1,4 +1,4 @@
-#include <python.h>
+#include <Python.h>
 void print_python_list(PyObject *p);
 void print_python_bytes(PyObject *p);
 
@@ -39,13 +39,13 @@ void print_python_bytes(PyObject *p)
 	PyBytesObject *bytes = (PyBytesObject *)p;
 
 	printf("[.] bytes object info\n");
-	printf(strcmp(p->ob_type->tp_name, "bytes") != 0)
+	if (strcmp(p->ob_type->tp_name, "bytes") != 0)
 	{
 		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
 	printf("  size: %1d\n", ((PyVarObject *)P)->ob_size);
-	printf("  trying string: &s\n", bytes->ob_sval);
+	printf("  trying string: %s\n", bytes->ob_sval);
 
 	if (((PyVarObject *)p)->ob_size > 10)
 		size = 10;
