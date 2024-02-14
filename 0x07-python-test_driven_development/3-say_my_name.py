@@ -3,6 +3,8 @@
 
 
 def say_my_name(first_name, last_name=""):
+
+
     """Method for printing first and last name.
 
     Args:
@@ -12,6 +14,8 @@ def say_my_name(first_name, last_name=""):
     Raises:
         TypeError: If first_name or last_name are not strings.
     """
+
+
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
 

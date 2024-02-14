@@ -3,6 +3,8 @@
 
 
 def print_square(size):
+
+
     """Method for printing a square with # characters.
 
     Args:
@@ -12,6 +14,8 @@ def print_square(size):
         TypeError: If size is not an int.
         ValueError: If size is < 0.
     """
+
+
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
 
