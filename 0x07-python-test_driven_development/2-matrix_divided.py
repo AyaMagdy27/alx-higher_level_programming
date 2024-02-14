@@ -3,8 +3,6 @@
 
 
 def matrix_divided(matrix, div):
-
-
     """Divides all elements of matrix by div.
     Args:
         matrix: List of lists containing int or float
