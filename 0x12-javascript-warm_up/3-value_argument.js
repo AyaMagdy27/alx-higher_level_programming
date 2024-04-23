@@ -3,6 +3,6 @@
 const firstArg = process.argv[2];
 
 if (firstArg) {
-  console.log(FirstArg);
+  console.log(firstArg);
 } else {
   console.log('No argument');
