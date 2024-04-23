@@ -6,3 +6,4 @@ if (firstArg) {
   console.log(firstArg);
 } else {
   console.log('No argument');
+}

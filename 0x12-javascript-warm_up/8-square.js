@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const squareSize = p#!/usr/bin/noderocess.argv[2];
+const squareSize = process.argv[2];
 const mySquare = parseInt(squareSize);
 const x = 'x';
 
