@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const addMeMaybe (number, theFunction) => {
+function addMeMaybe (number, theFunction) {
   number++;
   theFunction(number);
 };
